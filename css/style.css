@@ -220,7 +220,7 @@ a:hover {
 	width: 98%;
 	text-align: center;
 	position: fixed;
-	z-index: 1;
+    z-index: 1;
 }
 
 #nav ul {
@@ -266,14 +266,16 @@ a:hover {
 	
 #nav label { 
 		    display: block;
-		    background: url("../img/icon-menuwhite_slate.png") no-repeat right center;
+		    background: url("../img/icon-menuwhite.png") no-repeat right center;
 		    text-indent: -999em;
 		    opacity: 1;
 		    cursor: pointer;
 		    -webkit-user-select: none;  /* Chrome all / Safari all */
 		    -moz-user-select: none;     /* Firefox all */
 		    -ms-user-select: none;      /* IE 10+ */
-		    user-select: none;
+            user-select: none;
+            margin-top: 1em;
+            padding: 0.2em;
 		}
 	
 #nav input[type=checkbox]:checked ~ nav {
@@ -539,7 +541,13 @@ footer a:hover {
 			Media Queries for screen less than 45em (720px)
 ****************************************** */
 	@media screen and (max-width: 45em) {
-
+        #nav ul {
+            list-style: none;
+            margin: 1.1em 0 0 0;
+            float: right;
+            padding: 0.5em 3em 0.5em 3em;
+            background: rgba(38,65, 95, 0.9);
+        }
 
 	}
 
